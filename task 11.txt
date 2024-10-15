@@ -1,0 +1,42 @@
+ Navigate to Compute Engine
+
+In the left-hand menu, go to “Compute Engine” and then click on “VM instances.”
+
+   Enable the Compute Engine API
+
+If prompted, enable the Compute Engine API for your project.
+
+  Create a New VM Instance
+
+Click the “Create Instance” button 
+
+  Configure Your VM Instance
+
+Name: Provide a name for your VM instance.
+
+Region and Zone: Choose the desired region and zone for your instance.
+
+Machine Type: Select the machine type based on your resource needs (CPU, memory). The e2-micro is often a good choice for lightweight applications and is eligible for the free tier.
+
+Boot Disk: Choose an operating system for your VM. You can select from various images, including Windows and Linux distributions.
+
+Firewall: Enable HTTP and HTTPS traffic if you plan to run a web server.
+
+ Set Up Identity and API Access (Optional)
+
+Configure the service account and access scopes if your application requires specific permissions.
+
+ 		Create the Instance
+
+Review your settings and click the “Create” button to launch the VM.
+
+ 		Access Your VM
+
+Once the VM is running, you can access it:
+
+For Linux VMs: Use SSH. You can click on the "SSH" button in the GCP console next to your instance, or use a terminal:
+
+bash
+gcloud compute ssh your-instance-name --zone your-zone
+
+For Windows VMs: Use RDP. Click on the “Set Windows Password” link to create a password, and then use an RDP client to connect.
